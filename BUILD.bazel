@@ -1,0 +1,8 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "atomic_queue",
+    visibility = ["//visibility:public"],
+    strip_include_prefix = "include",
+    hdrs = glob(["include/**/*.h"]),
+)
